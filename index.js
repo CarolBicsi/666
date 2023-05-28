@@ -1,28 +1,40 @@
 import fs from 'node:fs'
-import setting from "./model/setting.js";
 
-logger.info('---------!_!---------')
-logger.info(`自动化插件1.0.3载入成功`)
-const files = fs
-  .readdirSync('./plugins/auto-plugin/app')
-  .filter((file) => file.endsWith('.js'))
+const files = fs.readdirSync('./plugins/ayaka-plugin/apps').filter(file => file.endsWith('.js'))
+
+let ret = []
+
+files.forEach((file) => {
+  ret.push(import(`./apps/${file}`))
+})
+
+ret = await Promise.allSettled(ret)
 
 let apps = {}
-for (let file of files) {
-  let name = file.replace('.js', '')
-  apps[name] = (await import(`./app/${file}`))[name]
+for (let i in files) {
+  let name = files[i].replace('.js', '')
+
+  if (ret[i].status != 'fulfilled') {
+    logger.error(`载入插件错误：${logger.red(name)}`)
+    logger.error(ret[i].reason)
+    continue
+  }
+  apps[name] = ret[i].value[Object.keys(ret[i].value)[0]]
 }
 
-setTimeout(async function () {
-  // 群名片复位
-  let GroupNameConfig = setting.getConfig("autoGroupName")
-  if (GroupNameConfig.enable){
-    Bot.gl.forEach((v, k) => {
-      Bot.pickGroup(k).setCard(Bot.uin, Bot.nickname);
-    });
-  }
-}, 1000)
+logger.info('------------------')
+logger.info('加载ayaka插件完成..')
+logger.info('------------------')
 
-let index = { auto: {} }
-export const auto = index.auto || {}
+let restart = await redis.get(`Yunzai:ayaka:restart`);
+if (restart) {
+    restart = JSON.parse(restart);
+    if (restart.isGroup) {
+        Bot.pickGroup(restart.id).sendMsg(`重启成功`);
+    } else {
+        common.relpyPrivate(restart.id, `重启成功`);
+    }
+    redis.del(`Yunzai:ayaka:restart`);
+}
+
 export { apps }
