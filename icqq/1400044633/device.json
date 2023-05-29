@@ -1,0 +1,18 @@
+{
+  "--begin--": "该设备为随机生成，丢失后不能得到原先配置",
+  "product": "ILPP-3B21A",
+  "device": "9B8AA",
+  "board": "96813",
+  "brand": "4535",
+  "model": "ILPP 93D2",
+  "wifi_ssid": "HUAWEI-8fa2c9a",
+  "bootloader": "U-boot",
+  "android_id": "IL.4909180.7469",
+  "boot_id": "0ec38d96-0a8f-b519-f916-fa7de0c67d5b",
+  "proc_version": "Linux version 5.10.101-android12-d7833bc6",
+  "mac_address": "2D:DB:4C:40:C7:88",
+  "ip_address": "192.168.44.80",
+  "imei": "868781023554872",
+  "incremental": "8670563602",
+  "--end--": "修改后可能需要重新验证设备。"
+}

@@ -1,0 +1,188 @@
+{
+	"2023": {
+		"2": {
+			"uid": 250087583,
+			"region": "cn_gf01",
+			"account_id": 335079974,
+			"nickname": "老公",
+			"date": "2023-04-22",
+			"month": 4,
+			"optional_month": [
+				2,
+				3,
+				4
+			],
+			"data_month": 2,
+			"data_last_month": 1,
+			"day_data": {
+				"current_primogems": 0,
+				"current_mora": 0,
+				"last_primogems": 0,
+				"last_mora": 0
+			},
+			"month_data": {
+				"current_primogems": 0,
+				"current_mora": 0,
+				"last_primogems": 920,
+				"last_mora": 130000,
+				"current_primogems_level": 0,
+				"primogems_rate": -100,
+				"mora_rate": -100,
+				"group_by": []
+			},
+			"lantern": false,
+			"isUpdate": true
+		},
+		"3": {
+			"uid": 250087583,
+			"region": "cn_gf01",
+			"account_id": 335079974,
+			"nickname": "老公",
+			"date": "2023-04-22",
+			"month": 4,
+			"optional_month": [
+				2,
+				3,
+				4
+			],
+			"data_month": 3,
+			"data_last_month": 2,
+			"day_data": {
+				"current_primogems": 0,
+				"current_mora": 0,
+				"last_primogems": 0,
+				"last_mora": 0
+			},
+			"month_data": {
+				"current_primogems": 1320,
+				"current_mora": 411300,
+				"last_primogems": 0,
+				"last_mora": 0,
+				"current_primogems_level": 1,
+				"primogems_rate": 132000,
+				"mora_rate": 41130000,
+				"group_by": [
+					{
+						"action_id": 5,
+						"action": "邮件奖励",
+						"num": 700,
+						"percent": 54
+					},
+					{
+						"action_id": 6,
+						"action": "活动奖励",
+						"num": 620,
+						"percent": 46
+					},
+					{
+						"action_id": 2,
+						"action": "任务奖励",
+						"num": 0,
+						"percent": 0
+					},
+					{
+						"action_id": 3,
+						"action": "每日活跃",
+						"num": 0,
+						"percent": 0
+					},
+					{
+						"action_id": 4,
+						"action": "深境螺旋",
+						"num": 0,
+						"percent": 0
+					},
+					{
+						"action_id": 1,
+						"action": "冒险奖励",
+						"num": 0,
+						"percent": 0
+					},
+					{
+						"action_id": 0,
+						"action": "其他",
+						"num": 0,
+						"percent": 0
+					}
+				]
+			},
+			"lantern": false,
+			"isUpdate": true
+		},
+		"4": {
+			"uid": 250087583,
+			"region": "cn_gf01",
+			"account_id": 335079974,
+			"nickname": "老公",
+			"date": "2023-04-22",
+			"month": 4,
+			"optional_month": [
+				2,
+				3,
+				4
+			],
+			"data_month": 4,
+			"data_last_month": 3,
+			"day_data": {
+				"current_primogems": 0,
+				"current_mora": 0,
+				"last_primogems": 0,
+				"last_mora": 0
+			},
+			"month_data": {
+				"current_primogems": 900,
+				"current_mora": 41350,
+				"last_primogems": 1320,
+				"last_mora": 411300,
+				"current_primogems_level": 1,
+				"primogems_rate": -31,
+				"mora_rate": -89,
+				"group_by": [
+					{
+						"action_id": 5,
+						"action": "邮件奖励",
+						"num": 600,
+						"percent": 67
+					},
+					{
+						"action_id": 6,
+						"action": "活动奖励",
+						"num": 300,
+						"percent": 33
+					},
+					{
+						"action_id": 2,
+						"action": "任务奖励",
+						"num": 0,
+						"percent": 0
+					},
+					{
+						"action_id": 3,
+						"action": "每日活跃",
+						"num": 0,
+						"percent": 0
+					},
+					{
+						"action_id": 4,
+						"action": "深境螺旋",
+						"num": 0,
+						"percent": 0
+					},
+					{
+						"action_id": 1,
+						"action": "冒险奖励",
+						"num": 0,
+						"percent": 0
+					},
+					{
+						"action_id": 0,
+						"action": "其他",
+						"num": 0,
+						"percent": 0
+					}
+				]
+			},
+			"lantern": false
+		}
+	}
+}
